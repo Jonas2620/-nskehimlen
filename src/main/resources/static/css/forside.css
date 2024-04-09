@@ -1,9 +1,9 @@
 body{
-    height: 200vh;
-    padding-top: 11vh;
-   <!-- overflow: hidden; GØR DENNE NORMAL IGEN NÅR PROJEKT ER DONE -->
+    height: 100vh;
+    padding-top: 20vh;
+    margin: 0;
+   <!--overflow: hidden;-->
 }
 
 .overskrift{
-margin-top: 10vh;
 }

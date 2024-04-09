@@ -6,6 +6,9 @@
     height: 18vh;
     display: flex;
     background-color: darkblue;
+   font-family: 'Poppins', "Trebuchet MS";
+    font-style: normal;
+    font-weight: 400;;
 }
 
 .logo{
@@ -21,7 +24,6 @@
     top: 50%;
     left: 32%;
     transform: translate(-32%, -50%);
-
     font-size: 5vh;
     color: white;
     text-decoration: none;

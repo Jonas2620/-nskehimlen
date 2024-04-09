@@ -17,11 +17,20 @@
 <header>
      <div class="header">
         <a href="forside.html" th:href="forside">
-            <img class="logo" src="/static/images/onskesoen.png" th:src="@{images/onskesoen.png}">
+            <img class="logo" src="/static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
         </a>
         <a href="forside.html" th:href="forside">
-            <img class="profil" src="/static/images/profilbillede.png" th:src="@{images/profilbillede.png}">
+            <img class="profil" src="/static/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="profil">
         </a>
+         <a class="hjem" href="forside.html" th:href="@{forside}">
+             Hjem
+         </a>
+         <a class="ønskeliste" href="forside.html" th:href="@{forside}">
+             Ønskelister
+         </a>
+         <a class="inspiration" href="forside.html" th:href="@{forside}">
+             Inspiration
+         </a>
      </div>
 </header>
 <body>
@@ -29,12 +38,13 @@
 
 </body>
 <footer>
-    <a class="kundeservice" href="forside.html" th:href="@{forside}">
-        Kundeservice
-    </a>
-    <a class="OmOs" href="forside.html" th:href="@{forside}">
-        Om os
-    </a>
-
+    <div class="footer">
+         <a class="kundeservice" href="forside.html" th:href="@{forside}">
+             Kundeservice
+         </a>
+         <a class="OmOs" href="forside.html" th:href="@{forside}">
+             Om os
+         </a>
+    </div>
 </footer>
 </html>
