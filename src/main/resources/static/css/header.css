@@ -9,3 +9,40 @@ header{
     width: 15vh;
     margin-left: 5vh;
 }
+.hjem{
+    position: absolute;
+    font-size: 3vh;
+    margin-top: 5vh;
+   margin-left: 10vh;
+    color: white;
+}
+.hjem:hover{
+    color: gold;
+}
+.profil{
+    position: absolute;
+    margin-left: 165vh;
+    width: 12vh;
+    margin-top: 1vh;
+}
+.ønskeliste{
+    position: absolute;
+    font-size: 3vh;
+    margin-top: 5vh;
+    margin-left: 30vh;
+    color: white;
+}
+.ønskeliste:hover{
+    color: gold;
+}
+.inspiration{
+    position: absolute;
+    font-size: 3vh;
+    margin-top: 5vh;
+    margin-left: 55vh;
+    color: white;
+}
+.inspiration:hover{
+    color: gold;
+}
+

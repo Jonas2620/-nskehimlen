@@ -1,0 +1,14 @@
+footer {
+    background-color: darkblue;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.kundeservice{
+    position: absolute;
+    color: white;
+}
