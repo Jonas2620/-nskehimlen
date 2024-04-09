@@ -1,3 +1,22 @@
+header{
+    background-color: darkblue;
+}
+
+.logo{
+width: 13vh;
+
+}
+.profil{
+    position: absolute;
+    margin-left: 170vh;
+    width: 6vh;
+    margin-top: 3vh;
+}
+
+.dropdown-menu{
+
+}
+
 .overskrift{
 margin-top: 10vh;
 }
