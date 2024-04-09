@@ -9,17 +9,13 @@
 }
 
 .logo{
-<<<<<<< Updated upstream
-    width: 15vh;
-    margin-left: 5vh;
-}
-=======
-    position: absolute;
+   position: absolute;
     width: 20vh;
     top: 50%;
     left: 10%;
     transform: translate(-10%, -50%);
 }
+
 .hjem{
     position: absolute;
     top: 50%;
@@ -66,5 +62,3 @@
     left: 90%;
     transform: translate(-90%, -50%);
 }
-
->>>>>>> Stashed changes
