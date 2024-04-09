@@ -1,13 +1,8 @@
-header{
-    background-color: darkblue;
+body{
+    height: 200vh;
+    padding-top: 11vh;
+   <!-- overflow: hidden; GØR DENNE NORMAL IGEN NÅR PROJEKT ER DONE -->
 }
-
-.logo{
-width: 13vh;
-
-}
-
-
 
 .overskrift{
 margin-top: 10vh;
