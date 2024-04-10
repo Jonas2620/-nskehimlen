@@ -1,5 +1,5 @@
 body{
-    height: 100vh;
+    height: 150vh;
     padding-top: 20vh;
     margin: 0;
     <!--overflow: hidden;-->
@@ -34,12 +34,3 @@ main{
     margin-top: -25vh;
 }
 
-
-
-/*
-.baggrund{
-    position: absolute;
-    width: 100%;
-    margin-top: -10vh
-}
-*/
