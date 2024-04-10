@@ -4,11 +4,24 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    height: 6vh;
 }
 .kundeservice{
     position: absolute;
     color: white;
+    margin-top: 2vh;
+    margin-left: 1vh;
+}
+.omOs{
+    position: absolute;
+    color: white;
+    margin-left: 12vh;
+    margin-top: 2vh;
+
+}
+.kundeservice:hover{
+    color: gold;
+}
+.omOs:hover{
+    color: gold;
 }
