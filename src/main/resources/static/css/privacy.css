@@ -1,0 +1,29 @@
+.header {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 12%;
+    margin-left: -42%;
+}
+
+.footer {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
