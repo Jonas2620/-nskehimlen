@@ -2,8 +2,44 @@ body{
     height: 100vh;
     padding-top: 20vh;
     margin: 0;
-   <!--overflow: hidden;-->
+    <!--overflow: hidden;-->
+}
+
+main{
+    padding: 0;
+    margin: 0;
+}
+
+.container1{
+    height: 30vh;
+    width: 100%;
+    background-color: #1CBDF3;
+
+}
+
+.container1 p{
+    margin: -.5vh;
+    padding: 0;
+    margin-right: 0;
 }
 
 .overskrift{
+    margin-top: -10vh;
 }
+
+.baggrund{
+    background-repeat: no-repeat;
+    background-image: url(/static/images/cartooncoast1.jpeg);
+    width: 100%;
+    margin-top: -25vh;
+}
+
+
+
+/*
+.baggrund{
+    position: absolute;
+    width: 100%;
+    margin-top: -10vh
+}
+*/
