@@ -1,14 +1,9 @@
-header{
-    background-color: darkblue;
+body{
+    height: 100vh;
+    padding-top: 20vh;
+    margin: 0;
+   <!--overflow: hidden;-->
 }
-
-.logo{
-width: 13vh;
-
-}
-
-
 
 .overskrift{
-margin-top: 10vh;
 }
