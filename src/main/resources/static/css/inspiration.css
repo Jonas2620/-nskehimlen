@@ -1,0 +1,32 @@
+.main-content {
+    max-width: 800px;
+    margin-left: 0%;
+    margin-top: 7%;
+    padding: 20px;
+}
+
+.inspiration-title {
+    color: darkblue;
+}
+
+.inspiration-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.inspiration-item {
+    margin-bottom: 1%;
+}
+
+.inspiration-link {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.inspiration-link:hover {
+    text-decoration: underline;
+}
+
+.header {
+    color: white;
+}
