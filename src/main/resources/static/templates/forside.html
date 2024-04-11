@@ -5,13 +5,13 @@
     <title>forside</title>
 
     <link rel="stylesheet" th:href="@{/css/forside.css}" href="../css/scrollbar.css">
+    <link rel="stylesheet" th:href="@{/css/headerForside.css}" href="../css/headerForside.css">
+   <!-- <link rel="stylesheet" th:href="@{/css/footer.css}" href="../css/footer.css">-->
     <link rel="stylesheet" th:href="@{/css/forside.css}" href="../css/forside.css">
-    <link rel="stylesheet" th:href="@{/css/header.css}" href="../css/header.css">
-    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
 </head>
 <header>
@@ -25,7 +25,7 @@
          <a class="hjem" href="forside.html" th:href="@{forside}">
              Hjem
          </a>
-         <a class="ønskeliste" href="forside.html" th:href="@{forside}">
+         <a class="ønskeliste" href="onskeliste.html" th:href="@{onskeliste.html}">
              Ønskelister
          </a>
          <a class="inspiration" href="forside.html" th:href="@{forside}">
@@ -34,17 +34,29 @@
      </div>
 </header>
 <body>
-<h1 class="overskrift">Hej med dig</h1>
-
-</body>
-<footer>
-    <div class="footer">
-         <a class="kundeservice" href="forside.html" th:href="@{forside}">
-             Kundeservice
-         </a>
-         <a class="OmOs" href="forside.html" th:href="@{forside}">
-             Om os
-         </a>
+    <div class="baggrund">
+        <img class="baggrund" src="/static/images/cartooncoast1.jpeg" th:src="@{images/waterbg.png}" alt="baggrund">
     </div>
-</footer>
+   <main>
+    <section class="container1">
+        <p>
+            hej med dig    hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig
+            hej med dig    hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig
+            hej med dig    hej med dig   hej med dig   hej med dig   hej med dig  hej med dig   hej med dig   hej med dig   hej med dig
+
+        </p>
+    </section>
+   </main>
+    <footer>
+        <div class="footer">
+            <a class="kundeservice" href="forside.html" th:href="@{forside}">
+                Kundeservice
+            </a>
+            <a class="OmOs" href="forside.html" th:href="@{forside}">
+                Om os
+            </a>
+        </div>
+    </footer>
+</body>
+
 </html>

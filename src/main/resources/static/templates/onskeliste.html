@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ønskeliste</title>
+    <link rel="stylesheet" th:href="@{/css/header.css}" href="../css/header.css">
+    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../css/footer.css">
+    <link rel="stylesheet" th:href="@{/css/scrollbar.css}" href="../css/scrollbar.css">
+    <link rel="stylesheet" th:href="@{/css/onskeliste.css}" href="../css/onskeliste.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <div class="header">
+    <a href="forside.html" th:href="forside">
+        <img class="logo" src="/static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Billede">
+    </a>
+    <a href="forside.html" th:href="forside">
+        <img class="profil" src="/static/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="Billede profil">
+    </a>
+
+    <a class="hjem" href="forside.html" th:href="@{forside}">
+        Hjem
+    </a>
+    <a class="ønskeliste" href="forside.html" th:href="@{forside}">
+        Ønskelister
+    </a>
+    <a class="inspiration" href="forside.html" th:href="@{forside}">
+        Inspiration
+    </a>
+    </div>
+</header>
+<body>
+<section class="container1">
+    <p>
+        hej med dig    hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig
+        hej med dig    hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig
+        hej med dig    hej med dig   hej med dig   hej med dig   hej med dig  hej med dig   hej med dig   hej med dig   hej med dig
+    </p>
+</section>
+<h1>Ønske Søen</h1>
+
+<form id="wishlistForm">
+    <label for="wishlistName">Navn på Ønskesky:</label>
+    <input type="text" id="wishlistName" name="wishlistName" required>
+    <button type="submit">Opret Ønskesky</button>
+</form>
+
+<!-- Liste over oprettede ønskeskyer -->
+<h2>Oprettede Ønskeskyer:</h2>
+<ul id="wishlists"></ul>
+
+
+</body>
+<footer>
+    <a class="kundeservice" href="forside.html" th:href="@{forside}">
+        Kundeservice
+    </a>
+    <a class="omOs" href="forside.html" th:href="@{forside}">
+        Om os
+    </a>
+
+</footer>
+</html>
