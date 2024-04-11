@@ -1,21 +1,21 @@
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 18vh;
     display: flex;
     background-color: transparent;
-   font-family: 'Poppins', "Trebuchet MS";
+    font-family: "Oswald", "Trebuchet MS";
     font-style: normal;
-    font-weight: bolder;
+    font-weight: 400;
 }
 
 .logo{
    position: absolute;
-    width: 20vh;
+    width: 14vh;
     top: 50%;
-    left: 10%;
+    left: 12%;
     transform: translate(-10%, -50%);
 }
 
@@ -24,7 +24,7 @@
     top: 50%;
     left: 32%;
     transform: translate(-32%, -50%);
-    font-size: 5vh;
+    font-size: 6vh;
     text-decoration: none;
     color: black;
 }
@@ -37,7 +37,7 @@
     top: 50%;
     left: 48.5%;
     transform: translate(-48.5%, -50%);
-    font-size: 5vh;
+    font-size: 6vh;
     text-decoration: none;
     color: black;
 }
@@ -49,7 +49,7 @@
     top: 50%;
     left: 68%;
     transform: translate(-68%, -50%);
-    font-size: 5vh;
+    font-size: 6vh;
     text-decoration: none;
     color: black;
 }
@@ -59,7 +59,7 @@
 
 .profil{
     position: absolute;
-    width: 21vh;
+    width: 22vh;
     top: 50%;
     left: 90%;
     transform: translate(-90%, -50%);
