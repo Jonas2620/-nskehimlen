@@ -3,7 +3,6 @@ footer {
     width: 100%;
     height: 20vh;
     background: linear-gradient(to top, #0000ff, #1CBDF3);
-    bottom: 0;
 }
 .kundeservice, .omOs{
     position: absolute;
@@ -17,7 +16,4 @@ footer {
 
 .kundeservice:hover, .omOs:hover{
     color: gold;
-}
-body{
-    height: 40vh;
 }
