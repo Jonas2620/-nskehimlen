@@ -9,3 +9,10 @@
 .wishlistFO{
     display: flex;
 }
+.wishbox{
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+body{
+    background-color: #1CBDF3;
+}
