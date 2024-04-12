@@ -1,0 +1,30 @@
+.main-content {
+    margin-left: -8%;
+    padding: 8%;
+
+}
+
+.login-help-section {
+    margin-bottom: 7%;
+}
+
+.login-help-title {
+    color: darkblue;
+}
+
+.login-help-text {
+    margin-bottom: 1%;
+}
+
+.login-help-steps {
+    list-style-type: decimal;
+    padding-left: 1%;
+}
+
+.login-help-step {
+    margin-bottom: 1%;
+}
+
+header {
+    color: white;
+}
