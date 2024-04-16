@@ -5,6 +5,9 @@ public class Ønskeliste {
 
     String name;
 
+    public Ønskeliste(){
+
+    }
     public Ønskeliste(int id, String name){
 this.id = id;
 this.name = name;
