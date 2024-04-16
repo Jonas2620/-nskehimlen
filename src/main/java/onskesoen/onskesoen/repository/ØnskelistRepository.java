@@ -22,7 +22,7 @@ private JdbcTemplate template;
         return template.query(sql, rowMapper);
     }
     public void addØnskeliste(Ønskeliste ø){
-        String sql = "INSERT INTO ønskesøen.wishlists (wishlist_id, wishlist_name) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO ønskesøen.wishlists (wishlist_id, wishlist_name) VALUES (?, ?)";
         template.update(sql, ø.getId(), ø.getName());
     }
     public Ønskeliste findØnskelistId(int id){

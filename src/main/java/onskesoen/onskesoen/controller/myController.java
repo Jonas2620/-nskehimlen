@@ -24,7 +24,7 @@ public class myController {
         return "forside";
     }
 
-    @GetMapping("/ønskeliste")
+    @GetMapping("/onskeliste")
     public String ønskeliste(Model model){
         List<Ønskeliste> ønskeList = ønskelisteService.fetchAll();
         model.addAttribute("ønskeliste", ønskeList);
@@ -37,6 +37,6 @@ public class myController {
     @PostMapping("/tilføj")
     public String createNew(@ModelAttribute Ønskeliste ønskeliste){
         ønskelisteService.addØnskelist(ønskeliste);
-        return "redirect:/ønskeliste";
+        return "redirect:/onskeliste";
     }
 }
