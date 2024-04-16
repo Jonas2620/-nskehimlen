@@ -36,7 +36,7 @@
 </header>
 <body>
     <div class="baggrund">
-        <img class="baggrund" src="/static/images/cartooncoast1.jpeg" th:src="@{images/waterbg.png}" alt="baggrund">
+        <img class="baggrund" src="/static/images/cartooncoast1.jpeg" th:src="@{images/cartooncoast1.jpeg}" alt="baggrund">
     </div>
    <main>
     <section class="container1">
@@ -51,13 +51,11 @@
     </section>
    </main>
     <footer>
-        <div class="footer">
-            <a class="kundeservice" href="forside.html" th:href="@{forside}">
-                Kundeservice
-            </a>
-            <a class="omOs" href="forside.html" th:href="@{forside}">
-                Om os
-            </a>
+        <div class="footer-links">
+            <a class="kundeservice" href="forside.html" th:href="@{forside.html}">Kundeservice</a>
+            <a class="omOs" href="forside.html" th:href="@{forside}">Om os</a>
+            <a class="privatlivspolitik" href="privacy.html" th:href="@{privacy.html}">Privatlivspolitik </a>
+            <a class="kontaktOs" href="privacy.html" th:href="@{privacy.html}">Kontakt os </a>
         </div>
     </footer>
 </body>
