@@ -12,8 +12,10 @@ import java.util.List;
 @Controller
 public class myController {
 
+
     @Autowired
     ønskelisteService ønskelisteService;
+
     @GetMapping("/")
     public String forside(Model model){
         List<Ønskeliste> ønskeList = ønskelisteService.fetchAll();

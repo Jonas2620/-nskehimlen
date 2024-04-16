@@ -22,21 +22,21 @@ private JdbcTemplate template;
         return template.query(sql, rowMapper);
     }
     public void addØnskeliste(Ønskeliste ø){
-        String sql = "INSERT INTO wishlists (wishlist_id, wishlist_name) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO ønskesøen.wishlists (wishlist_id, wishlist_name) VALUES (?, ?, ?)";
         template.update(sql, ø.getId(), ø.getName());
     }
     public Ønskeliste findØnskelistId(int id){
-        String sql = "SELECT * FROM wishlists WHERE wishlist_id = ?";
+        String sql = "SELECT * FROM ønskesøen.wishlists WHERE wishlist_id = ?";
         RowMapper<Ønskeliste> rowMapper = new BeanPropertyRowMapper<>(Ønskeliste.class);
         Ønskeliste ø = template.queryForObject(sql, rowMapper, id);
         return ø;
     }
     public Boolean deleteØnskeliste(int id){
-        String sql = "DELETE FROM person WHERE wishlist_id = ?";
+        String sql = "DELETE FROM ønskesøen.wishlists WHERE wishlist_id = ?";
         return template.update(sql, id) > 0;
     }
     public void updateØnskeliste(int id, Ønskeliste ø){
-        String sql = "UPDATE person SET wishlist_name = ? WHERE wishlist_id = ?";
+        String sql = "UPDATE ønskesøen.wishlists SET wishlist_name = ? WHERE wishlist_id = ?";
         template.update(sql, ø.getName(), ø.getId());
     }
 }

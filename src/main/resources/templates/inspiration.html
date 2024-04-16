@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inspiration</title>
-    <link rel="stylesheet" th:href="@{/css/inspiration.css}" href="../css/inspiration.css">
-    <link rel="stylesheet" th:href="@{/css/header.css}" href="../css/header.css">
-    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../css/footer.css">
+    <link rel="stylesheet" th:href="@{/css/inspiration.css}" href="../static/css/inspiration.css">
+    <link rel="stylesheet" th:href="@{/css/header.css}" href="../static/css/header.css">
+    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../static/css/footer.css">
 </head>
 <body>
 <header>
     <div class="header">
         <a href="forside.html" th:href="forside">
-            <img class="logo" src="/static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Billede">
+            <img class="logo" src="/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Billede">
         </a>
         <a href="forside.html" th:href="forside">
-            <img class="profil" src="/static/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="Billede profil">
+            <img class="profil" src="/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="Billede profil">
         </a>
 
         <a class="hjem" href="forside.html" th:href="@{forside}">
