@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>forside</title>
 
-    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../css/scrollbar.css">
-    <link rel="stylesheet" th:href="@{/css/headerForside.css}" href="../css/headerForside.css">
-    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../css/footer.css">
-    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../css/forside.css">
+    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../static/css/scrollbar.css">
+    <link rel="stylesheet" th:href="@{/css/headerForside.css}" href="../static/css/headerForside.css">
+    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../static/css/footer.css">
+    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../static/css/forside.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,26 +18,26 @@
 </head>
 <header>
      <div class="header">
-        <a href="forside.html" th:href="@{/}">
-            <img class="logo" src="/static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
+        <a href="forside.html" th:href="@{/static}">
+            <img class="logo" src="/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
         </a>
-        <a href="forside.html" th:href="@{/}">
-            <img class="profil" src="/static/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="profil">
+        <a href="forside.html" th:href="@{/static}">
+            <img class="profil" src="/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="profil">
         </a>
-         <a class="hjem" href="forside.html" th:href="@{/}">
+         <a class="hjem" href="forside.html" th:href="@{/static}">
              Hjem
          </a>
          <a class="ønskeliste" href="onskeliste.html" th:href="@{onskeliste.html}">
              Ønskelister
          </a>
-         <a class="inspiration" href="inspiration.html" th:href="@{/}">
+         <a class="inspiration" href="inspiration.html" th:href="@{/static}">
              Inspiration
          </a>
      </div>
 </header>
 <body>
     <div class="baggrund">
-        <img class="baggrund" src="/static/images/cartooncoast1.jpeg" th:src="@{images/waterbg.png}" alt="baggrund">
+        <img class="baggrund" src="/images/cartooncoast1.jpeg" th:src="@{images/cartooncoast1.jpeg}" alt="baggrund">
     </div>
    <main>
     <section class="container1">
