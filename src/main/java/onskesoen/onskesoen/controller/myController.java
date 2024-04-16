@@ -17,9 +17,15 @@ public class myController {
     ønskelisteService ønskelisteService;
 
     @GetMapping("/")
-    public String forside(Model model){
+    public String forside(){
+
+        return "forside";
+    }
+
+    @GetMapping("/ønskeliste")
+    public String ønskeliste(Model model){
         List<Ønskeliste> ønskeList = ønskelisteService.fetchAll();
         model.addAttribute("ønskeliste", ønskeList);
-        return "forside";
+        return "onskeliste";
     }
 }
