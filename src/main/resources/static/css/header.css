@@ -5,8 +5,8 @@
     width: 100%;
     height: 18vh;
     display: flex;
-    background: linear-gradient(to bottom, #0000ff, #1CBDF3);
-    font-family: "Oswald", "Trebuchet MS";
+    background: linear-gradient(to top, aliceblue , lightblue);
+    font-family: "Times New Roman";
     font-style: normal;
     font-weight: 400;
 }

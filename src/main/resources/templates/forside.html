@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>forside</title>
+
+    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../static/css/scrollbar.css">
+    <link rel="stylesheet" th:href="@{/css/headerForside.css}" href="../static/css/headerForside.css">
+    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../static/css/footer.css">
+    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../static/css/forside.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<header>
+     <div class="header">
+        <a href="forside.html" th:href="@{/static}">
+            <img class="logo" src="/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
+        </a>
+        <a href="forside.html" th:href="@{/static}">
+            <img class="profil" src="/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="profil">
+        </a>
+         <a class="hjem" href="forside.html" th:href="@{/static}">
+             Hjem
+         </a>
+         <a class="ønskeliste" href="onskeliste.html" th:href="@{onskeliste.html}">
+             Ønskelister
+         </a>
+         <a class="inspiration" href="inspiration.html" th:href="@{/static}">
+             Inspiration
+         </a>
+     </div>
+</header>
+<body>
+    <div class="baggrund">
+        <img class="baggrund" src="/images/cartooncoast1.jpeg" th:src="@{images/cartooncoast1.jpeg}" alt="baggrund">
+    </div>
+   <main>
+    <section class="container1">
+        <div class="overskrift-i-container-1">
+            <p>Download vores mobil app nu!</p>
+        </div>
+        <div class="tekst-i-container-1">
+            <p>Alle downloads før 15/04/2024 overgiver rettigheden til deres førstefødte dreng, og forventes at
+                donere 5L sæd inden for rimelig tid. Ved at downloade dette produkt accepterer du vores du vores slutbrugeraftale.</p>
+        </div>
+        <img class="billede-i-container-1" src="/static/images/handheldmob.png" th:src="@{images/handheldmob.png}" alt="handheld mobile">
+    </section>
+   </main>
+    <footer>
+        <div class="footer">
+            <a class="kundeservice" href="forside.html" th:href="@{forside}">
+                Kundeservice
+            </a>
+            <a class="omOs" href="forside.html" th:href="@{forside}">
+                Om os
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

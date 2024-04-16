@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration</title>
+    <link rel="stylesheet" th:href="@{/css/inspiration.css}" href="../static/css/inspiration.css">
+    <link rel="stylesheet" th:href="@{/css/header.css}" href="../static/css/header.css">
+    <link rel="stylesheet" th:href="@{/css/footer.css}" href="../static/css/footer.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="forside.html" th:href="forside">
+            <img class="logo" src="/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Billede">
+        </a>
+        <a href="forside.html" th:href="forside">
+            <img class="profil" src="/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="Billede profil">
+        </a>
+
+        <a class="hjem" href="forside.html" th:href="@{forside}">
+            Hjem
+        </a>
+        <a class="ønskeliste" href="forside.html" th:href="@{forside}">
+            Ønskelister
+        </a>
+        <a class="inspiration" href="forside.html" th:href="@{forside}">
+            Inspiration
+        </a>
+    </div>
+</header>
+<main class="main-content">
+    <section class="inspiration-section">
+        <h2 class="inspiration-title">Få Inspiration</h2>
+        <p>Her finder du masser af ideer og inspiration til gaver, arrangementer og meget mere!</p>
+        <ul class="inspiration-list">
+            <li class="inspiration-item"><a href="#" class="inspiration-link">10 Kreative Gaveideer til Din Bedste Ven</a></li>
+            <li class="inspiration-item"><a href="#" class="inspiration-link">Sådan Planlægger du den Perfekte Fest</a></li>
+            <li class="inspiration-item"><a href="#" class="inspiration-link">Gør-Det-Selv Gaver til Enhver Anledning</a></li>
+            <li class="inspiration-item"><a href="#" class="inspiration-link">De Bedste Rejsemål for Eventyrlystne Par</a></li>
+        </ul>
+    </section>
+</main>
+
+</body>
+<footer >
+    <a class="kundeservice" href="forside.html" th:href="@{forside}">
+        Kundeservice
+    </a>
+    <a class="omOs" href="forside.html" th:href="@{forside}">
+        Om os
+    </a>
+
+</footer>
+</html>
