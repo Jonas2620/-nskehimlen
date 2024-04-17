@@ -1,5 +1,6 @@
 package onskesoen.onskesoen.controller;
 
+import onskesoen.onskesoen.logik.logikken;
 import onskesoen.onskesoen.model.Ønskeliste;
 import onskesoen.onskesoen.service.ønskelisteService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,8 @@ public class myController {
 
     @Autowired
     ønskelisteService ønskelisteService;
+    @Autowired
+    logikken logikken;
 
     @GetMapping("/")
     public String forside(){
@@ -39,6 +42,8 @@ public class myController {
     }
     @PostMapping("/tilføj")
     public String createNew(@ModelAttribute("ønskeliste") Ønskeliste ønskeliste){
+        int nextId = logikken.findNextAvailableId();
+        ønskeliste.setWishlist_id(nextId); // Indstil id'et for den nye ønskeliste
         ønskelisteService.addØnskelist(ønskeliste);
         return "redirect:/onskeliste";
     }
@@ -68,4 +73,5 @@ public String updatePerson(@ModelAttribute Ønskeliste ønskeliste){
     ønskelisteService.updateØnskeliste(ønskeliste.getWishlist_id(), ønskeliste);
     return "redirect:/onskeliste";
 }
+
 }

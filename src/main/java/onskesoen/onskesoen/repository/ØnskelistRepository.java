@@ -39,6 +39,7 @@ private JdbcTemplate template;
         String sql = "UPDATE ønskesøen.wishlists SET wishlist_name = ? WHERE wishlist_id = ?";
         template.update(sql, ø.getWishlist_name(), ø.getWishlist_id());
     }
+
 }
 
 
