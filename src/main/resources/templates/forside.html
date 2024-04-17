@@ -19,10 +19,10 @@
 <header>
      <div class="header">
         <a href="forside.html" th:href="@{/}">
-            <img class="logo" src="/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
+            <img class="logo" src="../static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
         </a>
         <a href="forside.html" th:href="@{/}">
-            <img class="profil" src="/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="profil">
+            <img class="profil" src="../static/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="profil">
         </a>
          <a class="hjem" href="forside.html" th:href="@{/}">
              Hjem
@@ -37,28 +37,80 @@
 </header>
 <body>
     <div class="baggrund">
-        <img class="baggrund" src="/images/cartooncoast1.jpeg" th:src="@{images/cartooncoast1.jpeg}" alt="baggrund">
+        <img class="baggrund" src="../static/images/cartooncoast1.jpeg" th:src="@{..static/images/cartooncoast1.jpeg}" alt="baggrund">
     </div>
    <main>
-    <section class="container1">
-        <div class="overskrift-i-container-1">
-            <p>Download vores mobil app nu!</p>
-        </div>
-        <div class="tekst-i-container-1">
-            <p>Alle downloads før 15/04/2024 overgiver rettigheden til deres førstefødte dreng, og forventes at
+        <section class="container1">
+             <div class="overskrift-container-1">
+                <p>Download vores mobil app nu!</p>
+             </div>
+            <div class="tekst-container-1">
+                <p>Alle downloads før 15/04/2024 overgiver rettigheden til deres førstefødte dreng, og forventes at
                 donere 5L sæd inden for rimelig tid. Ved at downloade dette produkt accepterer du vores du vores slutbrugeraftale.</p>
-        </div>
-        <img class="billede-i-container-1" src="/static/images/handheldmob.png" th:src="@{images/handheldmob.png}" alt="handheld mobile">
-    </section>
+             </div>
+            <img class="billede-1-container-1" src="/static/images/handheldmob.png" th:src="@{images/handheldmob.png}" alt="billede-1-container-1">
+           <a href="https://www.apple.com/dk/search/%C3%B8nskes%C3%B8en?src=globalnav">
+                <img class="billede-2-container-1" src="/static/images/appstore.png" th:src="@{images/appstore.png}" alt="appstore">
+           </a>
+            <a href="https://play.google.com/store/search?q=%C3%B8nskes%C3%B8en&c=apps">
+                <img class="billede-3-container-1" src="/static/images/googleplay.png" th:src="@{images/googleplay.png}" alt="googleplay">
+            </a>
+        </section>
+       <div class="overskrift-trustpilot">
+           <h1>Hør vores brugeres meninger!</h1>
+       </div>
+       <section class="container2">
+           <div class="overskrift-container-2">
+           </div>
+           <div class="tekst-container-2">
+               <marquee behaviour="scroll" direction="left">
+                   <div class="clauspic">
+                        <img src="/static/images/claus.png" th:src="@{images/claus.png}" alt="trust-pilot-pic-1">
+                             <h3>Claus</h3>
+                                <p>Det er så nemt! 5 Stjerner</p>
+                   </div>
+                   <div class="caypic">
+                       <img src="/static/images/cay.png" th:src="@{images/cay.png}" alt="trust-pilot-pic-2">
+                            <h3>Cay</h3>
+                                <p>Alle mine ønsker 1 sted!</p>
+                   </div>
+                   <div class="jarlpic">
+                       <img src="/static/images/jarl.png" th:src="@{images/jarl.png}" alt="trust-pilot-pic-3">
+                            <h3>Jarl</h3>
+                                <p>Min kone har forladt mig</p>
+                   </div>
+                   <div class="davidpic">
+                       <img src="/static/images/david.png" th:src="@{images/david.png}" alt="trust-pilot-pic-4">
+                       <h3>David</h3>
+                       <p>Jeg elsker bare den her hjemmeside</p>
+                   </div>
+               </marquee>
+           </div>
+           <img class="billede-1-container-2" src="static/images/..." th:src="@{}" alt=""
+       </section>
    </main>
     <footer>
-        <div class="footer">
-            <a class="kundeservice" href="forside.html" th:href="@{/}">
-                Kundeservice
-            </a>
-            <a class="omOs" href="forside.html" th:href="@{/}">
-                Om os
-            </a>
+        <div class="hjælp">
+            <h2>Hjælp</h2>
+            <a class="kundeservice" href="https://chat.openai.com/" th:href="@{https://chat.openai.com/}">Kundeservice</a>
+            <a class="omOs" href="forside.html" th:href="@{forside}">Om os</a>
+            <a class="privatlivspolitik" href="privacy.html" th:href="@{privacy.html}">Privatlivspolitik </a>
+            <a class="kontaktOs" href="privacy.html" th:href="@{privacy.html}">Kontakt os </a>
+        </div>
+        <div class="samarbejdspartnere">
+            <h2>Samarbejdspartnere</h2>
+            <a class="lego" href="https://www.lego.com/da-dk" th:href="@{https://www.lego.com/da-dk}">Lego</a>
+            <a class="royal" href="https://royalunibrew.dk/" th:href="@{/https://royalunibrew.dk/}">Royal Unibrew</a>
+            <a class="nfbio" href="https://nfbio.dk/city-select?destination=/" th:href="@{https://nfbio.dk/}">Nordisk Film Biograf</a>
+            <a class="javabogen" href="https://javabog.dk/" th:href="@{https://javabog.dk/}">Java Bogen</a>
+        </div>
+        <div class="tilmelding">
+            <h2>Klik her for at tilmelde<br> dig vores nyhedsbrev!</h2>
+            <input type="text" id="email">
+            <button class="tilmelding-knap">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" th:href="@{https://www.youtube.com/}">Tilmeld</a>
+            </button>
+
         </div>
     </footer>
 </body>

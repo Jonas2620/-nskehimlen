@@ -1,20 +1,71 @@
 footer {
+    padding: 0;
+    margin: 0;
+    position: relative;
     color: white;
     width: 100%;
-    height: 20vh;
-    background: linear-gradient(to bottom, aliceblue , lightblue);
+    height: 50vh;
+    /*background: linear-gradient(to bottom, #1CBDF3, 70%, blue);*/
+    background-color: green;
     bottom: 0;
-}
-.kundeservice, .omOs{
-    position: absolute;
-    color: white;
-    margin-top: 7vh;
-    margin-left: 1vh;
-}
-.omOs{
-    margin-left: 20vh;
+    font-family: "Lexend Deca", sans-serif;
 }
 
-.kundeservice:hover, .omOs:hover{
-    color: gold;
+.hjælp{
+    display: grid;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 2.3vh;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -35%);
+    grid-row-gap: 4vh;
+}
+
+.hjælp a{
+    color: white;
+    text-decoration: none;
+}
+
+.hjælp a:hover{
+    text-decoration: underline;
+}
+
+.samarbejdspartnere{
+    display: grid;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 2.3vh;
+    left: 85%;
+    top: 35%;
+    transform: translate(-85%, -35%);
+    grid-row-gap: 4vh;
+}
+
+.samarbejdspartnere a{
+    color: white;
+    text-decoration: none;
+}
+
+.samarbejdspartnere a:hover{
+    text-decoration: underline;
+}
+
+.tilmelding{
+    display: grid;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    font-size: 2.3vh;
+    left: 15%;
+    top: 40%;
+    transform: translate(-15%, -40%);
+    grid-row-gap: 4vh;
+}
+
+.tilmelding-knap{
+    transform: translate(140%);
+    width: 10vh;;
 }
