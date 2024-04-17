@@ -3,6 +3,7 @@ body{
     padding-top: 20vh;
     margin: 0;
     font-family: "Lexend Deca", sans-serif;
+    background-color: #1CBDF3;
 }
 
 .container1{
@@ -10,40 +11,90 @@ body{
     width: 100%;
     background-color: #1CBDF3;
     position: relative;
-    margin-top: -.5vh;
+    margin-top: -.7vh;
+    margin-bottom: 35vh;
     font-family: "Acme", sans-serif;
 }
 
-.overskrift-i-container-1{
+.overskrift-container-1{
     font-size: 10vh;
     position: absolute;
-    margin-top: 2vh;
+    margin-top: -10vh;
     margin-left: 8vw;
     rotate: -3deg;
 }
 
-.tekst-i-container-1{
+.tekst-container-1{
     font-size: 1.5vh;
     position: absolute;
-    left: 13vw;
+    left: 14vw;
     bottom:0;
     font-family: "Lexend Deca", sans-serif;
 }
 
-.billede-i-container-1{
+.billede-1-container-1{
     position: absolute;
-    width: 60vh;
+    width: 35vw;
     top: 0%;
     right: 0%;
-    transform: translate(-0%, -35%);
+    transform: translate(-0%, -40%);
+}
+
+.billede-2-container-1{
+    position: absolute;
+    width: 28vw;
+    top: 33%;
+    left: 15%;
+}
+
+.billede-3-container-1{
+    position: absolute;
+    width: 20vw;
+    top: 40%;
+    left: 40%;
+}
+
+.overskrift-trustpilot{
+    position: absolute;
+    left: 50%;
+    top: 200%;
+    transform: translate(-50%,-200%);
+    font-family: "Acme", sans-serif;
+    font-size: 2.1vw;
+    font-weight: 200;
+}
+
+.container2{
+    height: 60vh;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 10vh;
+    background-color: white;
+    position: relative;
+    font-family: "Lexend Deca", sans-serif;
+    border-radius: 3vw;
+    overflow: hidden;
+}
+
+.tekst-container-2{
+    margin-top: 8vh;
+}
+
+.tekst-container-2 img{
+    margin: 0 5vw 0 0;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.clauspic, .caypic, .jarlpic, .davidpic{
+    display: inline-block;
 }
 
 .baggrund{
     background-repeat: no-repeat;
-    background-image: url(/static/images/cartooncoast1.jpeg);
+    background-image: url(static/images/cartooncoast1.jpeg);
     width: 100%;
     margin-top: -30vh;
 }
-
 
 
