@@ -57,18 +57,18 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="ønskeliste: ${ønskeliste}">
-            <td th:text="${ønskeliste.id}"/>
-            <td th:text="${ønskeliste.name}"/>
+        <tr th:each="onskeliste: ${onskelister}">
+            <td th:text="${onskeliste.wishlist_id}"/>
+            <td th:text="${onskeliste.wishlist_name}"/>
             <td>
-                <a th:href="@{'/viewOne/'+${ønskeliste.id}}">
-                    <button class="btn-viewOne" id="btn-viewOne">Se ønskeliste</button>
+                <a th:href="@{'/viewOne/'+${onskeliste.wishlist_id}}">
+                    <button >Se ønskeliste</button>
                 </a>
-                <a th:href="@{'/deleteOne/'+${ønskeliste.id}}">
-                    <button class="btn-deleteOne" id="btn-deleteOne">Fjern ønskeliste</button>
+                <a th:href="@{'/deleteOne/'+${onskeliste.wishlist_id}}">
+                    <button >Fjern ønskeliste</button>
                 </a>
-                <a th:href="@{'/updateOne/'+${ønskeliste.id}}">
-                    <button class="btn-updateOne" id="btn-updateOne">Opdater ønskeliste</button>
+                <a th:href="@{'/updateOne/'+${onskeliste.wishlist_id}}">
+                    <button >Opdater ønskeliste</button>
                 </a>
             </td>
         </tr>
