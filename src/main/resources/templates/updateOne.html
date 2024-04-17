@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Update person</h1>
+
+<form action="/updateØnskeliste" method="post">
+    <input type="text" name="wishlist_id" th:value="${ønskeliste.wishlist_id}">
+    <input type="text" name="wishlist_name" th:value="${ønskeliste.wishlist_name}">
+    <input type="submit" value="Save changes" style="background-color: #4CAF50">
+</form>
+</body>
+</html>

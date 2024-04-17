@@ -6,6 +6,7 @@ footer {
     width: 100%;
     height: 50vh;
     /*background: linear-gradient(to bottom, #1CBDF3, 70%, blue);*/
+    /*background: linear-gradient(to top, #0000ff, #1CBDF3);*/
     background-color: green;
     bottom: 0;
     font-family: "Lexend Deca", sans-serif;
@@ -69,3 +70,4 @@ footer {
     transform: translate(140%);
     width: 10vh;;
 }
+

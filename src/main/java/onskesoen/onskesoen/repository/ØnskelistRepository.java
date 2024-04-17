@@ -17,13 +17,13 @@ private JdbcTemplate template;
 
 
     public List<Ønskeliste> fetchAll(){
-        String sql = "SELECT * FROM ønskesøen.wishlists;";
+        String sql = "SELECT * FROM ønskesøen.wishlists";
         RowMapper<Ønskeliste> rowMapper = new BeanPropertyRowMapper<>(Ønskeliste.class);
         return template.query(sql, rowMapper);
     }
     public void addØnskeliste(Ønskeliste ø){
-        String sql = "INSERT INTO ønskesøen.wishlists (wishlist_id, wishlist_name) VALUES (?, ?, ?)";
-        template.update(sql, ø.getId(), ø.getName());
+        String sql = "INSERT INTO ønskesøen.wishlists (wishlist_id, wishlist_name) VALUES (?, ?)";
+        template.update(sql, ø.getWishlist_id(), ø.getWishlist_name());
     }
     public Ønskeliste findØnskelistId(int id){
         String sql = "SELECT * FROM ønskesøen.wishlists WHERE wishlist_id = ?";
@@ -37,7 +37,7 @@ private JdbcTemplate template;
     }
     public void updateØnskeliste(int id, Ønskeliste ø){
         String sql = "UPDATE ønskesøen.wishlists SET wishlist_name = ? WHERE wishlist_id = ?";
-        template.update(sql, ø.getName(), ø.getId());
+        template.update(sql, ø.getWishlist_name(), ø.getWishlist_id());
     }
 }
 
