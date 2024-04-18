@@ -17,7 +17,7 @@
 <!-- Tilføj ønsker til ønskelisten -->
 <h2>Tilføj ønsker til ønskelisten</h2>
 <form action="/tilføjØnske" method="post">
-    <input type="hidden" name="wishlist_id" th:value="${ønskeliste.wishlist_id}">
+    <input type="hidden" name="wishlist_id" th:value="${wishlist_id}">
     <label for="ønskeNavn">Tilføj ønske:</label>
     <input type="text" id="ønskeNavn" name="ønskeNavn">
     <input type="submit" value="Tilføj ønske">

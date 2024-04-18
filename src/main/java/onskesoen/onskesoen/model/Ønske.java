@@ -2,14 +2,15 @@ package onskesoen.onskesoen.model;
 
 public class Ønske {
     private int id;
-    private int wishlistId;
+    private int wishlist_id;
+
     private String ønskeNavn;
 
     public Ønske() {}
 
     public Ønske(int id, int wishlistId, String ønskeNavn) {
         this.id = id;
-        this.wishlistId = wishlistId;
+        this.wishlist_id = wishlistId;
         this.ønskeNavn = ønskeNavn;
     }
 
@@ -22,13 +23,16 @@ public class Ønske {
     }
 
     public int getWishlistId() {
-        return wishlistId;
+        return wishlist_id;
     }
 
-    public void setWishlistId(int wishlistId) {
-        this.wishlistId = wishlistId;
+    public int getWishlist_id() {
+        return wishlist_id;
     }
 
+    public void setWishlist_id(int wishlist_id) {
+        this.wishlist_id = wishlist_id;
+    }
     public String getØnskeNavn() {
         return ønskeNavn;
     }
@@ -41,7 +45,7 @@ public class Ønske {
     public String toString() {
         return "Ønske{" +
                 "id=" + id +
-                ", wishlistId=" + wishlistId +
+                ", wishlistId=" + wishlist_id +
                 ", ønskeNavn='" + ønskeNavn + '\'' +
                 '}';
     }
