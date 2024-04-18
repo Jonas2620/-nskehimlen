@@ -17,30 +17,28 @@
     <img class="profil" src="/static/images/profilbillede.png" alt="Profil Billede">
 </header>
 <main>
-<div class="container">
-    <h2>Login</h2>
-    <form id="loginForm" action="login-handler.php" method="POST">
-        <label for="username">Brugernavn:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Kodeord:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Log ind</button>
-    </form>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" action="login-handler.php" method="POST">
+            <label for="username">Brugernavn:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Kodeord:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Log ind</button>
+        </form>
+        <?php
+    if (isset($_GET['error'])) {
+        echo '<div id="errorMessage" class="error-message">Forkert brugernavn eller kodeord.</div>
     <div class="additional-options">
         <a href="forgot-password.html">Glemt adgangskode?</a>
         <span>|</span>
         <a href="signup.html">Opret dig som bruger</a>
     </div>
-    <?php
-            if (isset($_GET['error'])) {
-                echo '<div id="errorMessage" class="error-message">Forkert brugernavn eller kodeord.</div>';
-}
-?>
-</div>
+    </div>
 </main>
-    <footer class="footer">
-        <p class="kundeservice">Kundeservice: kontakt@onskesoen.dk</p>
-    </footer>
+<footer class="footer">
+    <p class="kundeservice">Kundeservice: kontakt@onskesoen.dk</p>
+</footer>
 
 </body>
 </html>

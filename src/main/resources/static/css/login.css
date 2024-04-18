@@ -2,15 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: white;
+
 }
 
 .container {
-    width: 300px;
-    padding: 20px;
+    width: 90%;
+    margin-top: 24vh;
+    padding: 5%;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -53,4 +54,9 @@ button:hover {
 .error-message {
     color: #ff0000;
     margin-top: 10px;
+}
+
+.additional-options {
+    margin-left: 80vh;
+    margin-top: 3vh;
 }
