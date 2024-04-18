@@ -21,7 +21,6 @@ public class myController {
 
     @GetMapping("/")
     public String forside(){
-
         return "forside";
     }
 
@@ -67,5 +66,5 @@ public String updateOne(@PathVariable("id") int id, Model model){
 public String updatePerson(@ModelAttribute Ønskeliste ønskeliste){
     ønskelisteService.updateØnskeliste(ønskeliste.getWishlist_id(), ønskeliste);
     return "redirect:/onskeliste";
-}
+    }
 }
