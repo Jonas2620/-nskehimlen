@@ -36,6 +36,7 @@
         </a>
     </div>
 </header>
+<main>
     <div class="container-1">
         <h2>Login</h2>
         <form action="login" method="post">
@@ -43,9 +44,15 @@
             <input type="text" id="username" name="username" required><br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required><br>
-            <button type="submit">Login</button>
+            <div class="buttons">
+                <button type="submit">Login</button>
+                <a href="register.html" th:href="@{/register.html}">
+                <button type="radio">Register</button>
+                </a>
+            </div>
         </form>
     </div>
+</main>
 <footer>
     <div class="hjælp">
         <h2>Hjælp</h2>
@@ -64,7 +71,7 @@
     <div class="tilmelding">
         <h2>Klik her for at tilmelde<br> dig vores nyhedsbrev!</h2>
         <input type="text" id="email">
-        <button class="tilmelding-knap">
+        <button type="submit" class="tilmelding-knap">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" th:href="@{https://www.youtube.com/}">Tilmeld</a>
         </button>
     </div>
