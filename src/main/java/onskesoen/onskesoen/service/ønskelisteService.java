@@ -25,6 +25,8 @@ public class ønskelisteService {
         }
         public void updateØnskeliste(int id, Ønskeliste ø){
             ønskelistRepository.updateØnskeliste(id,ø);
+
+
         }
     }
 

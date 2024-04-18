@@ -1,6 +1,8 @@
 package onskesoen.onskesoen.repository;
 
 import onskesoen.onskesoen.model.Ønskeliste;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -31,14 +33,18 @@ private JdbcTemplate template;
         Ønskeliste ø = template.queryForObject(sql, rowMapper, id);
         return ø;
     }
-    public Boolean deleteØnskeliste(int id){
+
+
+
+    public Boolean deleteØnskeliste(int wishlist_id){
         String sql = "DELETE FROM ønskesøen.wishlists WHERE wishlist_id = ?";
-        return template.update(sql, id) > 0;
+        return template.update(sql, wishlist_id) > 0;
     }
     public void updateØnskeliste(int id, Ønskeliste ø){
         String sql = "UPDATE ønskesøen.wishlists SET wishlist_name = ? WHERE wishlist_id = ?";
         template.update(sql, ø.getWishlist_name(), ø.getWishlist_id());
     }
+
 }
 
 
