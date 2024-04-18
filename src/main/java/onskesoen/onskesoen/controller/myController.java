@@ -69,7 +69,8 @@ public String deleteOne(@PathVariable("wishlist_id") int wishlist_id){
 }
 @GetMapping("/updateOne/{wishlist_id}")
 public String updateOne(@PathVariable("wishlist_id") int wishlist_id, Model model){
-    model.addAttribute("onskelister", ønskelisteService.deleteØnskeliste(wishlist_id));
+    Ønskeliste ønskeliste = ønskelisteService.findØnskelisteId(wishlist_id);
+    model.addAttribute("ønskeliste",ønskeliste);
     model.addAttribute("wishlist_id", wishlist_id); // Tilføj wishlist_id til modellen
 
     return "updateOne";
