@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Opdater ønskeliste</title>
 </head>
 <body>
-<h1>Update person</h1>
+<h1>Opdater ønskeliste</h1>
 
 <form action="/updateØnskeliste" method="post">
-    <input type="text" name="wishlist_id" th:value="${ønskeliste.wishlist_id}">
-    <input type="text" name="wishlist_name" th:value="${ønskeliste.wishlist_name}">
-    <input type="submit" value="Save changes" style="background-color: #4CAF50">
+    <input type="hidden" name="wishlist_id" th:value="${onskelister.wishlist_id}">
+    <label for="wishlist_name">Navn på ønskeliste:</label>
+    <input type="text" id="wishlist_name" name="wishlist_name" th:value="${onskelister.wishlist_name}">
+    <input type="submit" value="Gem ændringer" style="background-color: #4CAF50">
+</form>
+
+<!-- Tilføj ønsker til ønskelisten -->
+<h2>Tilføj ønsker til ønskelisten</h2>
+<form action="/tilføjØnske" method="post">
+    <input type="hidden" name="wishlistId" th:value="${onskelister.wishlist_id}">
+    <label for="ønskeNavn">Tilføj ønske:</label>
+    <input type="text" id="ønskeNavn" name="ønskeNavn">
+    <input type="submit" value="Tilføj ønske">
 </form>
 </body>
 </html>
