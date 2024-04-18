@@ -71,3 +71,20 @@ footer {
     width: 10vh;
 }
 
+button{
+    width: 20%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 2vh;
+    overflow: hidden;
+    transform: translate(200%, -5%);
+}
+button:hover {
+    background-color: #0361c7;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}

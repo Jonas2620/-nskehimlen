@@ -1,22 +1,28 @@
 body {
-    font-family: "Lexend Deca", sans-serif;
-    height: 150vh;
+    height: 100vh;
+    padding-top: 20vh;
     margin: 0;
-    padding: 0;
-    padding-top: 30vh;
+    font-family: "Lexend Deca", sans-serif;
     background-color: #1CBDF3;
 }
 
+main{
+    height: 70vh;
+}
+
 .container-1{
+    position: relative;
     width: 60%;
-    height: 20%;
+    height: 60%;
     background-color: #fff;
     border-radius: 5vh;
     box-shadow: 0 0 4vw;
-    transform: translate(34%, 10%);
+    transform: translate(34%, 40%);
+
 }
 
 h2 {
+
     text-align: center;
 }
 
@@ -32,15 +38,10 @@ input[type="password"] {
     border: .1vh solid #ccc;
 }
 
-button {
-    width: 20%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    transform: translate(200%, 40%);
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    transform: translate(-40%, 40%);
 }
-button:hover {
-    background-color: #0056b3;
-}
+
 
