@@ -30,8 +30,28 @@
         <p>Har du spørgsmål eller forslag? Kontakt os gerne på følgende e-mailadresse: kontakt@onskesoen.dk</p>
     </section>
 </main>
-<footer class="footer">
-    <p class="kundeservice">Kundeservice: kontakt@onskesoen.dk</p>
+<footer>
+    <div class="hjælp">
+        <h2>Hjælp</h2>
+        <a class="kundeservice" href="https://chat.openai.com/" th:href="@{https://chat.openai.com/}">Kundeservice</a>
+        <a class="omOs" href="forside.html" th:href="@{forside}">Om os</a>
+        <a class="privatlivspolitik" href="privacy.html" th:href="@{privacy.html}">Privatlivspolitik </a>
+        <a class="kontaktOs" href="privacy.html" th:href="@{privacy.html}">Kontakt os </a>
+    </div>
+    <div class="samarbejdspartnere">
+        <h2>Samarbejdspartnere</h2>
+        <a class="lego" href="https://www.lego.com/da-dk" th:href="@{https://www.lego.com/da-dk}">Lego</a>
+        <a class="royal" href="https://royalunibrew.dk/" th:href="@{/https://royalunibrew.dk/}">Royal Unibrew</a>
+        <a class="nfbio" href="https://nfbio.dk/city-select?destination=/" th:href="@{https://nfbio.dk/}">Nordisk Film Biograf</a>
+        <a class="javabogen" href="https://javabog.dk/" th:href="@{https://javabog.dk/}">Java Bogen</a>
+    </div>
+    <div class="tilmelding">
+        <h2>Klik her for at tilmelde<br> dig vores nyhedsbrev!</h2>
+        <input type="text" id="mail">
+        <button type="submit" class="tilmelding-knap">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" th:href="@{https://www.youtube.com/}">Tilmeld</a>
+        </button>
+    </div>
 </footer>
 </body>
 </html>
