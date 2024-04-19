@@ -3,11 +3,12 @@ body{
     margin: 0;
     height: 90vh;
     background-color: #1CBDF3;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 .container-1 {
     width: 33%;
-    height: 20vh;
+    height: 30vh;
     margin-top: 40vh;
     margin-bottom: 22vh;
     transform: translate(100%, 0);

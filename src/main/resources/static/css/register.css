@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    background-color: #1CBDF3;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+main{
+    height: 100%;
+}
+
+.asd{
+    background-color: white;
+    margin-top: 30vh;
+    margin-left: 24vw;
+    width: 50%;
+    height: 40vh;
+    border-radius: 3vh;
+}
+
+.asd h2{
+    transform: translate(44%, 10%);
+}
+
+.asdf{
+    display: grid;
+    grid-gap: -1vh;
+}
+
+.asdf input,.asdf label{
+    width: 50%;
+    transform: translate(50%);
+}

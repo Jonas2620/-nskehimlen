@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Ønskeliste</title>
+    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../static/css/scrollbar.css">
     <link rel="stylesheet" th:href="@{/css/header.css}" href="../static/css/header.css">
     <link rel="stylesheet" th:href="@{/css/footer.css}" href="../static/css/footer.css">
-    <link rel="stylesheet" th:href="@{/css/scrollbar.css}" href="../static/css/scrollbar.css">
     <link rel="stylesheet" th:href="@{/css/onskeliste.css}" href="../static/css/onskeliste.css">
 
 
@@ -36,10 +36,10 @@
     </div>
 </header>
 <main>
+    <h1 class="wishbox-overskrift">Ønske Søen</h1>
     <div class="wishbox">
-    <h1>Ønske Søen</h1>
         <a href="nyØnskesø.html" th:href="@{/nyØnskesø}">
-            <button class="btn-create, btn" id="btn-create">Tilføj ny ønskeliste</button>
+            <button class="btn-create" id="btn-create">Tilføj ny ønskeliste</button>
         </a>
     <form id="wishlistForm">
         <table>
