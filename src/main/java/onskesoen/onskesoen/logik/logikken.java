@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
+import onskesoen.onskesoen.model.User;
 import onskesoen.onskesoen.model.Ønskeliste;
 import onskesoen.onskesoen.repository.ØnskelistRepository;
 import onskesoen.onskesoen.service.ønskelisteService;
@@ -11,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class logikken {
+public class logikken extends User {
     @Autowired
     ønskelisteService ønskelisteService;
     public int findNextAvailableId() {
