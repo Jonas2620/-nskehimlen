@@ -92,5 +92,4 @@ public String updateOne(@PathVariable("wishlist_id") int wishlist_id, Model mode
         ønskeService.tilføjØnske(ønske);
         return "redirect:/onskeliste";
     }
-
 }

@@ -15,9 +15,9 @@ public class ØnskeRepository {
     @Autowired
     private JdbcTemplate template;
 
-    public void tilføjØnske(Ønske ønske) {
-        String sql = "INSERT INTO ønskesøen.wishes (wishlist_id, wish_navn) VALUES (?, ?)";
-        template.update(sql, ønske.getWishlistId(), ønske.getØnskeNavn());
+    public void tilføjØnske(Ønske ø) {
+        String sql = "INSERT INTO ønskesøen.wishes (wishlist_id, ønske_navn) VALUES (?, ?)";
+        template.update(sql, ø.getWishlistId(), ø.getØnskeNavn());
     }
 
     public List<Ønske> findØnskerTilWishlist(int wishlist_id) {
