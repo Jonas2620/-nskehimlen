@@ -28,13 +28,13 @@ public class UserController {
         user.setPassword(password);
         user.setEmail(email);
         userService.registerUser(user);
-        return "redirect:/login";
+        return "forside";
     }
 
     @PostMapping("/login")
     public String loginUser(@RequestParam String username, @RequestParam String password) {
         if (userService.loginUser(username, password)) {
-            return "redirect:/forside";
+            return "forside";
         } else {
             return "redirect:/login?error=true";
         }

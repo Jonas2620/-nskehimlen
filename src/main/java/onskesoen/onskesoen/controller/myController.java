@@ -8,7 +8,10 @@ import onskesoen.onskesoen.service.ønskelisteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
@@ -81,15 +84,12 @@ public String updateOne(@PathVariable("wishlist_id") int wishlist_id, Model mode
     public String updateØnskelisteForm(@PathVariable("wishlist_id") int id, Model model) {
         Ønskeliste ønskeliste = ønskelisteService.findØnskelisteId(id);
         model.addAttribute("ønskeliste", ønskeliste);
-        return "updateOne";
+        return "redirect:/updateOne";
     }
 
     @PostMapping("/tilføjØnske")
-    public String tilføjØnske(@ModelAttribute Ønske ønske, @RequestParam("wishlist_id") int wishlist_id) {
-        ønske.setWishlist_id(wishlist_id); // Sæt ønskets wishlist_id
+    public String tilføjØnske(@ModelAttribute Ønske ønske) {
         ønskeService.tilføjØnske(ønske);
         return "redirect:/onskeliste";
     }
-
-
 }
