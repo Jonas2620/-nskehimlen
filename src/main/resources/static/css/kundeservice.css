@@ -2,17 +2,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-
+    background-color: #1CBDF3;
 }
 
-main {
-    max-width: 800px;
-    margin-left: -10%;
-    margin-top: -2%;
-    padding: 11%;
+main{
+    height: 90vh;
 }
 
-.boks {
-    flex: 1;
+.container-1{
+    position: relative;
+    width: 77%;
+    height: 40vh;
+    transform: translate(15%, 80%);
+    background-color: white;
+    border-radius: 2vh;
+    font-size: 1.6vh;
+}
+
+.container-1 p{
+    transform: translate(2%, 100%);
+}
+
+.container-1 h2{
+    transform: translate(2%, 160%);
 }

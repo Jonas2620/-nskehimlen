@@ -1,26 +1,21 @@
-.container1{
-    display: flex;
-    padding-top: 20vh;
+body {
+    background-color: #1CBDF3;
+    padding: 0;
     margin: 0;
-    color: black;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
-.wishlistFO{
-    display: flex;
+
+main{
+    height: 75vh;
 }
+
 .wishbox{
-    min-height: 100%;
-    padding-bottom: 100px;
-    flex: 1;
+    width: 70%;
+    transform: translate(20%, 100%);
+    margin-top: 10%;
+    background-color: white;
 }
-body{
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Sørger for, at body fylder hele viewport's højde */
-    margin: 0;
-}
+
 .btn_fjern {
     display: inline-block;
     padding: 0.5rem 1rem;
