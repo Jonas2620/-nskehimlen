@@ -1,21 +1,25 @@
-.main-content {
-    max-width: 800px;
-    margin-top: 18%;
-    margin-left: 22%;
-    padding: 20px;
+body{
+    padding: 0;
+    margin: 0;
+    height: 90vh;
+    background-color: #1CBDF3;
+    font-family: "Lexend Deca", sans-serif;
 }
 
-section {
-    margin-bottom: 20px;
+.container-1 {
+    width: 33%;
+    height: 30vh;
+    margin-top: 40vh;
+    margin-bottom: 22vh;
+    transform: translate(100%, 0);
+    background-color: white;
+    font-size: 2vh;
+    border-radius: 3vh;
+    overflow: hidden;
 }
 
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
+.container-1 p{
+transform: translate(5%);
 }
 
 input[type="email"] {
@@ -24,25 +28,4 @@ input[type="email"] {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: darkblue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #001f4d;
-}
-
-header {
-    color: white;
-}
-
-footer {
-    color: white;
 }

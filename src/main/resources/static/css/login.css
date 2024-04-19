@@ -18,11 +18,9 @@ main{
     border-radius: 5vh;
     box-shadow: 0 0 4vw;
     transform: translate(34%, 40%);
-
 }
 
 h2 {
-
     text-align: center;
 }
 
@@ -39,9 +37,6 @@ input[type="password"] {
 }
 
 .buttons{
-    display: flex;
-    justify-content: space-evenly;
-    transform: translate(-40%, 40%);
+    display: grid;
+    grid-row-gap: 2vh;
 }
-
-

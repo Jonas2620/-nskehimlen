@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Os</title>
+    <title>Kundeservice</title>
+    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../static/css/scrollbar.css">
     <link rel="stylesheet" th:href="@{/css/header.css}" href="../static/css/header.css">
     <link rel="stylesheet" th:href="@{/css/footer.css}" href="../static/css/footer.css">
-    <link rel="stylesheet" th:href="@{/css/OmOs.css}" href="../static/css/OmOs.css">
+    <link rel="stylesheet" th:href="@{/css/kundeservice.css}" href="../static/css/kundeservice.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<header class="header">
-    <img class="logo" src="/static/images/onskesoen.png" alt="Ønske Søen Logo">
-    <a href="#" class="hjem">Hjem</a>
-    <a href="#" class="ønskeliste">Ønskeliste</a>
-    <a href="#" class="inspiration">Inspiration</a>
-    <img class="profil" src="/static/images/profilbillede.png" alt="Profil Billede">
+<header>
+    <div class="header">
+        <a href="forside.html" th:href="@{/}">
+            <img class="logo" src="../static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
+        </a>
+        <a href="login.html" th:href="@{/}">
+            <img class="profil" src="../static/images/profil1.png" th:src="@{images/profilbillede.png}" alt="profil">
+        </a>
+        <a class="hjem" href="forside.html" th:href="@{/}">
+            Hjem
+        </a>
+        <a class="ønskeliste" href="onskeliste.html" th:href="@{/onskeliste}">
+            Ønskelister
+        </a>
+        <a class="inspiration" href="inspiration.html" th:href="@{/}">
+            Inspiration
+        </a>
+    </div>
 </header>
 <main>
-    <section>
-        <h2>Kontaktinformation</h2>
-        <p>Vi er her for at hjælpe! Du kan kontakte os på følgende e-mail adresse: kontakt@onskesoen.dk.
-            Vores dedikerede kundeservice team bestræber sig på at besvare alle henvendelser så hurtigt som
-            muligt. Uanset om du har brug for assistance med din konto, har spørgsmål om vores tjenester,
-            eller ønsker at give os feedback, er du velkommen til at skrive til os. Vi ser frem til at
-            hjælpe dig med dine behov og ønsker.</p>
-    </section>
-    <section>
-        <h2>Oftest stillede spørgsmål (FAQ)</h2>
-        <p>Hvordan opretter jeg en ny ønskeliste? Her klikker du øverst på siden på "ønskeliste" og klikker på "opret
-            ønskeliste" og udfylder formularen.<br>Hvordan sletter jeg min ønskeliste? Her klikker du simpelt ind
-            på din ønskeliste du ønsker at slette, rediger og derefter på slet ønskeliste.</p>
-    </section>
-    <section>
-        <h2>Privatlivspolitik og vilkår og betingelser</h2>
-        <p>Vi indsamler din data og dine oplysninger. Vi bruger dem til at kontakte dig om nyheder og andre tilbud.</p>
-        <p>Du har ret til at få adgang til, rette eller slette dine personoplysninger. Hvis du ønsker at ændre eller slette dine oplysninger, bedes du kontakte os på mail.</p>
-        <p>Vi sælger din data til højestbydende (oftest NordKorea), og vi deler din data med tredjeparter uden din samtykke.</p>
-    </section>
+    <div class="container-1">
+           </ul> <h2>Kontaktinformation</h2>
+            <p>Vi er her for at hjælpe! Du kan kontakte os på følgende e-mail adresse: kontakt@onskesoen.dk.
+                Vores dedikerede kundeservice team bestræber sig på at besvare alle henvendelser så hurtigt som
+                muligt. <br>Uanset om du har brug for assistance med din konto, har spørgsmål om vores tjenester,
+                eller ønsker at give os feedback, er du velkommen til at skrive til os. Vi ser frem til at
+                hjælpe dig med dine behov og ønsker.</p>
+            <h2>Oftest stillede spørgsmål (FAQ)</h2>
+            <p>Hvordan opretter jeg en ny ønskeliste? Her klikker du øverst på siden på "ønskeliste" og klikker på "opret
+                ønskeliste" og udfylder formularen.<br>Hvordan sletter jeg min ønskeliste? Her klikker du simpelt ind
+                på din ønskeliste du ønsker at slette, rediger og derefter på slet ønskeliste.</p>
+            <h2>Privatlivspolitik og vilkår og betingelser</h2>
+            <p>Vi indsamler din data og dine oplysninger. Vi bruger dem til at kontakte dig om nyheder og andre tilbud.
+            Du har ret til at få adgang til, rette eller slette dine personoplysninger.<br> Hvis du ønsker at ændre eller slette dine oplysninger, bedes du kontakte os på mail.
+            Vi sælger din data til højestbydende (oftest NordKorea), og vi deler din data med tredjeparter uden din samtykke.</p>
+    </div>
 </main>
-<footer class="footer">
-    <p class="kundeservice">Kundeservice: kontakt@onskesoen.dk</p>
+<footer>
+    <div class="hjælp">
+        <h2>Hjælp</h2>
+        <a class="kundeservice" href="https://chat.openai.com/" th:href="@{https://chat.openai.com/}">Kundeservice</a>
+        <a class="omOs" href=".html" th:href="@{forside}">Om os</a>
+        <a class="privatlivspolitik" href="privacy.html" th:href="@{privacy.html}">Privatlivspolitik </a>
+        <a class="kontaktOs" href="privacy.html" th:href="@{privacy.html}">Kontakt os </a>
+    </div>
+    <div class="samarbejdspartnere">
+        <h2>Samarbejdspartnere</h2>
+        <a class="lego" href="https://www.lego.com/da-dk" th:href="@{https://www.lego.com/da-dk}">Lego</a>
+        <a class="royal" href="https://royalunibrew.dk/" th:href="@{/https://royalunibrew.dk/}">Royal Unibrew</a>
+        <a class="nfbio" href="https://nfbio.dk/city-select?destination=/" th:href="@{https://nfbio.dk/}">Nordisk Film Biograf</a>
+        <a class="javabogen" href="https://javabog.dk/" th:href="@{https://javabog.dk/}">Java Bogen</a>
+    </div>
+    <div class="tilmelding">
+        <h2>Klik her for at tilmelde<br> dig vores nyhedsbrev!</h2>
+        <input type="text" id="mail">
+        <button type="submit" class="tilmelding-knap">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" th:href="@{https://www.youtube.com/}">Tilmeld</a>
+        </button>
+    </div>
 </footer>
 </body>
 </html>

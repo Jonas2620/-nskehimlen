@@ -1,60 +1,50 @@
-.container1{
-    display: flex;
-    padding-top: 20vh;
+body {
+    background-color: #1CBDF3;
+    padding: 0;
     margin: 0;
-    color: black;
-    justify-content: center;
-    align-items: center;
-}
-.wishlistFO{
-    display: flex;
-}
-.wishbox{
-    min-height: 100%;
-    padding-bottom: 100px;
-    flex: 1;
-}
-body{
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Sørger for, at body fylder hele viewport's højde */
-    margin: 0;
-}
-.btn_fjern {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.25rem;
+    height: 100vh;
+    font-family: "Lexend Deca", sans-serif;
 }
 
-.btn_fjern:hover {
-    background-color: #0056b3;
+main{
+    height: 75vh;
 }
-.btn_view {
+
+.wishbox{
+    width: 70%;
+    height: 30vh;
+    transform: translate(20%, 100%);
+    margin-top: 7%;
+    background-color: white;
+    padding-top: 2vh;
+    border-radius: 3vh;
+    overflow: hidden;
+}
+
+.wishbox-overskrift {
+    position: absolute;
+    margin-left: 40%;
+    font-size: 8vh;
+    left: -3%;
+    top: 20%;
+    font-family: Acme, sans-serif;
+}
+
+.btn-create{
+    transform: translate(180%);
+}
+
+.btn_fjern, .btn_view, .btn_update {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 1vh;
+    transform: translate(90%);
 }
-.btn_view:hover {
-    background-color: #0056b3;
-}
-.btn_update {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.25rem;
-}
-.btn_update:hover {
+
+.btn_fjern:hover, .btn_view:hover, .btn_update:hover {
     background-color: #0056b3;
 }

@@ -3,85 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Ønskeliste</title>
+    <link rel="stylesheet" th:href="@{/css/forside.css}" href="../static/css/scrollbar.css">
     <link rel="stylesheet" th:href="@{/css/header.css}" href="../static/css/header.css">
     <link rel="stylesheet" th:href="@{/css/footer.css}" href="../static/css/footer.css">
-    <link rel="stylesheet" th:href="@{/css/scrollbar.css}" href="../static/css/scrollbar.css">
     <link rel="stylesheet" th:href="@{/css/onskeliste.css}" href="../static/css/onskeliste.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
+<body>
 <header>
     <div class="header">
-    <a href="forside.html" th:href="@{/}">
-        <img class="logo" src="../static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Billede">
-    </a>
-    <a href="forside.html" th:href="@{/}">
-        <img class="profil" src="../static/images/profilbillede.png" th:src="@{images/profilbillede.png}" alt="Billede profil">
-    </a>
-
-    <a class="hjem" href="forside.html" th:href="@{/}">
-        Hjem
-    </a>
-    <a class="ønskeliste" href="forside.html" th:href="@{/onskeliste}">
-        Ønskelister
-    </a>
-    <a class="inspiration" href="forside.html" th:href="@{/}">
-        Inspiration
-    </a>
+        <a href="forside.html" th:href="@{/}">
+            <img class="logo" src="../static/images/onskesoen.png" th:src="@{images/onskesoen.png}" alt="Logo">
+        </a>
+        <a href="login.html" th:href="@{/}">
+            <img class="profil" src="../static/images/profil1.png" th:src="@{images/profilbillede.png}" alt="profil">
+        </a>
+        <a class="hjem" href="forside.html" th:href="@{/}">
+            Hjem
+        </a>
+        <a class="ønskeliste" href="onskeliste.html" th:href="@{/onskeliste}">
+            Ønskelister
+        </a>
+        <a class="inspiration" href="inspiration.html" th:href="@{/}">
+            Inspiration
+        </a>
     </div>
 </header>
-<body>
-<section class="container1">
-    <p>
-        hej med dig    hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig
-        hej med dig    hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig   hej med dig
-        hej med dig    hej med dig   hej med dig   hej med dig   hej med dig  hej med dig   hej med dig   hej med dig   hej med dig
-    </p>
-</section>
-<div class="wishbox">
-<h1>Ønske Søen</h1>
-    <a href="nyØnskesø.html" th:href="@{/nyØnskesø}">
-        <button class="btn-create, btn" id="btn-create">Tilføj ny ønskeliste</button>
-    </a>
-<form id="wishlistForm">
-    <table>
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Ønskesø navn</th>
+<main>
+    <h1 class="wishbox-overskrift">Ønske Søen</h1>
+    <div class="wishbox">
+        <a href="nyØnskesø.html" th:href="@{/nyØnskesø}">
+            <button class="btn-create" id="btn-create">Tilføj ny ønskeliste</button>
+        </a>
+    <form id="wishlistForm">
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Ønskesø navn</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="onskeliste: ${onskelister}">
+                <td th:text="${onskeliste.wishlist_id}"/>
+                <td th:text="${onskeliste.wishlist_name}"/>
+                <td>
+                    <a th:href="@{'/viewOne/'+${onskeliste.wishlist_id}}" class="btn_view">Se ønskeliste</a>
+                    <a th:href="@{'/deleteOne/'+${onskeliste.wishlist_id}}" class="btn_fjern"> Fjern ønskeliste</a>
+                    <a th:href="@{'/updateOne/'+${onskeliste.wishlist_id}}" class="btn_update">Opdater ønskeliste</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
 
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="onskeliste: ${onskelister}">
-            <td th:text="${onskeliste.wishlist_id}"/>
-            <td th:text="${onskeliste.wishlist_name}"/>
-            <td>
-                <a th:href="@{'/viewOne/'+${onskeliste.wishlist_id}}" class="btn_view">Se ønskeliste</a>
-                <a th:href="@{'/deleteOne/'+${onskeliste.wishlist_id}}" class="btn_fjern"> Fjern ønskeliste</a>
-                <a th:href="@{'/updateOne/'+${onskeliste.wishlist_id}}" class="btn_update">Opdater ønskeliste</a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</form>
-
-<!-- Liste over oprettede ønskeskyer -->
-<h2>Oprettede Ønskeskyer:</h2>
-<ul id="wishlists"></ul>
-</div>
-</body>
+    <!-- Liste over oprettede ønskeskyer -->
+    <h2>Oprettede Ønskeskyer:</h2>
+    <ul id="wishlists"></ul>
+    </div>
+</main>
 <footer>
-    <a class="kundeservice" href="forside.html" th:href="@{/}">
-        Kundeservice
-    </a>
-    <a class="omOs" href="forside.html" th:href="@{/}">
-        Om os
-    </a>
-
+    <div class="hjælp">
+        <h2>Hjælp</h2>
+        <a class="kundeservice" href="https://chat.openai.com/" th:href="@{https://chat.openai.com/}">Kundeservice</a>
+        <a class="omOs" href="forside.html" th:href="@{forside}">Om os</a>
+        <a class="privatlivspolitik" href="privacy.html" th:href="@{privacy.html}">Privatlivspolitik </a>
+        <a class="kontaktOs" href="privacy.html" th:href="@{privacy.html}">Kontakt os </a>
+    </div>
+    <div class="samarbejdspartnere">
+        <h2>Samarbejdspartnere</h2>
+        <a class="lego" href="https://www.lego.com/da-dk" th:href="@{https://www.lego.com/da-dk}">Lego</a>
+        <a class="royal" href="https://royalunibrew.dk/" th:href="@{/https://royalunibrew.dk/}">Royal Unibrew</a>
+        <a class="nfbio" href="https://nfbio.dk/city-select?destination=/" th:href="@{https://nfbio.dk/}">Nordisk Film Biograf</a>
+        <a class="javabogen" href="https://javabog.dk/" th:href="@{https://javabog.dk/}">Java Bogen</a>
+    </div>
+    <div class="tilmelding">
+        <h2>Klik her for at tilmelde<br> dig vores nyhedsbrev!</h2>
+        <input type="text" id="mail">
+        <button type="submit" class="tilmelding-knap">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" th:href="@{https://www.youtube.com/}">Tilmeld</a>
+        </button>
+    </div>
 </footer>
+</body>
 </html>

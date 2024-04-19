@@ -56,9 +56,8 @@ body{
 
 .overskrift-trustpilot{
     position: absolute;
-    left: 50%;
-    top: 200%;
-    transform: translate(-50%,-200%);
+    left: 45vh;
+    top: 130vh;
     font-family: "Acme", sans-serif;
     font-size: 2.1vw;
     font-weight: 200;

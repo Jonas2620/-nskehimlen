@@ -32,7 +32,7 @@ public class ØnskeRepository {
     }
 
     public void opdaterØnske(Ønske ønske) {
-        String sql = "UPDATE ønskesøen.wishes SET ønske_navn = ? WHERE id = ?";
+        String sql = "UPDATE ønskesøen.ønsker SET ønske_navn = ? WHERE id = ?";
         template.update(sql, ønske.getØnskeNavn(), ønske.getId());
     }
 }
