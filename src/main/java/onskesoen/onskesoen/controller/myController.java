@@ -28,6 +28,11 @@ public class myController {
 
         return "forside";
     }
+    @GetMapping("/inspiration")
+    public String inspi(){
+
+        return "inspiration";
+    }
 
     @GetMapping("/onskeliste")
     public String ønskeliste(Model model){
