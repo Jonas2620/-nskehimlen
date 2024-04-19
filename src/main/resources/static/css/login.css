@@ -37,7 +37,6 @@ input[type="password"] {
 }
 
 .buttons{
-    display: flex;
-    justify-content: space-around;
-    transform: translate(-40%, 40%);
+    display: grid;
+    grid-row-gap: 2vh;
 }

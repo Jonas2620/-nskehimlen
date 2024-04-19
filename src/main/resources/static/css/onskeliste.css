@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 main{
@@ -11,45 +12,39 @@ main{
 
 .wishbox{
     width: 70%;
+    height: 30vh;
     transform: translate(20%, 100%);
-    margin-top: 10%;
+    margin-top: 7%;
     background-color: white;
+    padding-top: 2vh;
+    border-radius: 3vh;
+    overflow: hidden;
 }
 
-.btn_fjern {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.25rem;
+.wishbox-overskrift {
+    position: absolute;
+    margin-left: 40%;
+    font-size: 8vh;
+    left: -3%;
+    top: 20%;
+    font-family: Acme, sans-serif;
 }
 
-.btn_fjern:hover {
-    background-color: #0056b3;
+.btn-create{
+    transform: translate(180%);
 }
-.btn_view {
+
+.btn_fjern, .btn_view, .btn_update {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 1vh;
+    transform: translate(230%);
 }
-.btn_view:hover {
-    background-color: #0056b3;
-}
-.btn_update {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.25rem;
-}
-.btn_update:hover {
+
+.btn_fjern:hover, .btn_view:hover, .btn_update:hover {
     background-color: #0056b3;
 }
