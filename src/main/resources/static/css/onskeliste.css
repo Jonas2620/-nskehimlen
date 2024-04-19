@@ -42,7 +42,7 @@ main{
     text-decoration: none;
     border: none;
     border-radius: 1vh;
-    transform: translate(230%);
+    transform: translate(90%);
 }
 
 .btn_fjern:hover, .btn_view:hover, .btn_update:hover {
